@@ -16,6 +16,7 @@
     h6 {
         font-family: "Montserrat", sans-serif;
         text-align: center;
+        margin: 0;
     }
 
     header {
@@ -39,6 +40,7 @@
        text-align: center;
        padding-bottom: 50px;
        padding-top: 20px;
+     
       
    }
    .portfolio h2{
@@ -47,14 +49,17 @@
    }
    .portfolio-main, .myportfolio{
        display: flex;
-       
       flex-wrap: wrap;
-      justify-content: center;
-      
+      justify-content: center; 
    }
-   .portfolio-main, .myportfolio, h5{
+   
+   .portfolio-main.myportfolio, h5{
        text-align: left;
-       padding-left: 12px;
+       border: 1px solid #0e1;
+       background-image: -webkit-linear-gradient(0deg, #0e1 0%, #00acc1 100%);
+        background-image: -ms-linear-gradient(0deg, #8bc34a 0%, #00acc1 100%);
+        color: #000;
+        font-weight: bold;
    }
    .portfolio a{
       
@@ -62,7 +67,7 @@
    .portfolio img{
        max-width: 320px;
        max-height: 220px;
-       padding: 10px;
+      
    }
    footer{
     background-image: -webkit-linear-gradient(0deg, #000 0%, #00acc1 100%);
@@ -86,22 +91,18 @@
         <h2 class="w3-text-grey">My Portfolio</h2>
         <hr>
         <div class="portfolio-main">
-                <div class="myportdolio">
+                <div class="myportdolio" style="padding:10px 10px;">
                         <h5>Effect Consulting</h5>
                          <a href="app/index.html"><img src="demo.png" ></a>
                      </div>
-                     <div class="myportdolio">
+                     <div class="myportdolio" style="padding:10px 10px;">
                          <h5>Golden</h5>
                          <a href="gold/index.html"><img src="gold.png" ></a>
                      </div>
-                    <div class="myportdolio">
+                    <div class="myportdolio" style="padding:10px 10px;">
                         <h5>Avto Xoll</h5>
                         <a href="avtoxoll/index.html"><img src="avto.png" ></a>
                     </div>
-                    <div class="myportdolio">
-                            <h5>Avto Xoll</h5>
-                            <a href="avtoxoll/index.html"><img src="avto.png" ></a>
-                        </div>
                    
         </div>
            
@@ -118,7 +119,7 @@
                     <source src="Bahtiyor_Rahmanov_-_Rano_(uzhits.net).mp3" type="audio/mpeg">
                   Your browser does not support the audio element.
                   </audio>
-        <h5></h5>
+       
         <i class="fa fa-facebook-official w3-hover-opacity"></i>
         <i class="fa fa-instagram w3-hover-opacity"></i>  
         <i class="fa fa-vk" aria-hidden="true"></i> 
